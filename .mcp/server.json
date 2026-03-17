@@ -1,7 +1,14 @@
 {
   "name": "SmartMoneyOracle",
-  "description": "Whale & Institutional Flow Intelligence \u2014 8 tools: protocol flows, institutional tracking, alpha signals, chain flows.",
+  "description": "Whale & Institutional Flows \u2014 8 tools, alpha signals, x402 USDC micropayments on Base.",
   "url": "https://tooloracle.io/smart/mcp/",
-  "version": "1.0.0",
-  "tools": 8
+  "x402": "https://tooloracle.io/x402/smart/mcp/",
+  "version": "2.0.0",
+  "tools": 8,
+  "pricing": {
+    "unit": "$0.01",
+    "range": "$0.03-$0.10",
+    "network": "base",
+    "currency": "USDC"
+  }
 }
