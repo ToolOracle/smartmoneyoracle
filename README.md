@@ -1,54 +1,52 @@
 # SmartMoneyOracle — Whale & Institutional Flow Intelligence MCP Server
 
-> Protocol TVL flows, institutional tracking, alpha signals, cross-chain capital movement, and stablecoin supply analysis. The smart money radar for AI agents.
+> Protocol TVL flows, institutional tracking, alpha signals, cross-chain capital movement, stablecoin supply. 8 tools.
 
-**Part of [ToolOracle](https://tooloracle.io) — AI-Native MCP Tools for Professionals**
+**Part of [ToolOracle](https://tooloracle.io) — Policy-enforced, tier-gated, usage-metered tool execution**
 
-## Connect in 30 seconds
+## Connect
 
 ```bash
 npx -y mcp-remote https://tooloracle.io/smart/mcp/
 ```
 
-**Claude Desktop**:
-```json
-{
-  "mcpServers": {
-    "smartmoneyoracle": {
-      "command": "npx",
-      "args": ["-y", "mcp-remote", "https://tooloracle.io/smart/mcp/"]
-    }
-  }
-}
+## x402 Pay-per-call (autonomous agents)
+
+```
+POST https://tooloracle.io/x402/smart/mcp/
+→ 402 with structured pricing → Send USDC on Base → Retry with X-PAYMENT header
 ```
 
-## 8 Tools
+## 8 Tools · 1 unit = $0.01
 
-| Tool | Credits | Description |
-|------|---------|-------------|
-| `top_whales` | 2 | Whale activity: token boosts, community takeovers, CoinGecko trending |
-| `flow_scan` | 2 | Protocol TVL history: 7-day inflows/outflows, chain breakdown |
-| `institutional` | 3 | Track institutional protocols: Lido, Aave, Maker, Ondo, Ethena etc. |
-| `alpha_signal` | 3 | Combined momentum + whale scoring: COLD to EXPLOSIVE |
-| `protocol_flows` | 2 | Top protocols gaining/losing TVL right now |
-| `chain_flows` | 2 | Cross-chain capital allocation: TVL per chain |
-| `stablecoin_flows` | 2 | Stablecoin supply tracking — leading market indicator |
-| `health_check` | 0 | Server status, API backends |
+| Tool | Units | Price | Tier |
+|------|-------|-------|------|
+| `institutional` | 10 | $0.10 | Premium |
+| `alpha_signal` | 10 | $0.10 | Premium |
+| `flow_scan` | 5 | $0.05 | Deep |
+| `protocol_flows` | 5 | $0.05 | Deep |
+| `top_whales` | 3 | $0.03 | Standard |
+| `chain_flows` | 3 | $0.03 | Standard |
+| `stablecoin_flows` | 3 | $0.03 | Standard |
+| `health_check` | 0 | free | — |
 
-## Data Sources (all free)
+## Alpha scoring
 
-- **DeFiLlama**: Protocol TVL, chain TVL, stablecoin supply (no key required)
-- **DexScreener**: Token boosts, community takeovers (no key required)
-- **CoinGecko**: Trending tokens (no key required)
+`alpha_signal` combines price momentum + volume surge + buy pressure + whale boost activity into a single score: COLD → WARMING → HOT → EXPLOSIVE.
 
-## Pricing
+## Tier gating
 
-Credits shared across all ToolOracle products: Free (50/mo) | Starter $49 (500) | Pro $149 (2K) | Agency $349 (6K)
+| Tier | Max/call | Blocked |
+|------|----------|---------|
+| Free ($0) | 3 units | institutional, alpha_signal |
+| Starter ($49/mo) | 8 units | — |
+| Pro+ / x402 | 15 units | — |
+
+## Data sources (all free)
+
+DeFiLlama (TVL, protocols, stablecoins) · DexScreener (whale boosts, CTOs) · CoinGecko (trending)
 
 ## Links
 
-- [ToolOracle Platform](https://tooloracle.io)
-- [RankOracle (SEO)](https://github.com/ToolOracle/rankoracle)
-- [ShopOracle (E-Commerce)](https://github.com/ToolOracle/shoporacle)
-- [MemeOracle (Memecoin)](https://github.com/ToolOracle/memeoracle)
-- [YieldOracle (DeFi Yields)](https://github.com/ToolOracle/yieldoracle)
+- [ToolOracle](https://tooloracle.io) · [x402 Gateway](https://tooloracle.io/x402/)
+- [RankOracle](https://github.com/ToolOracle/rankoracle) · [ShopOracle](https://github.com/ToolOracle/shoporacle) · [MemeOracle](https://github.com/ToolOracle/memeoracle) · [YieldOracle](https://github.com/ToolOracle/yieldoracle)
