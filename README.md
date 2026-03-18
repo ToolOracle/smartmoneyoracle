@@ -4,6 +4,8 @@
 
 **Part of [ToolOracle](https://tooloracle.io) — Policy-enforced, tier-gated, usage-metered tool execution**
 
+[![SmartMoneyOracle MCP server](https://glama.ai/mcp/servers/ToolOracle/smartmoneyoracle/badges/card.svg)](https://glama.ai/mcp/servers/ToolOracle/smartmoneyoracle)
+
 ## Connect
 
 ```bash
