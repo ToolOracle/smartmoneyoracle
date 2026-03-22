@@ -1,52 +1,61 @@
-# SmartMoneyOracle — Whale & Institutional Flow Intelligence MCP Server
+# 🐋 smartmoneyOracle
 
-> Protocol TVL flows, institutional tracking, alpha signals, cross-chain capital movement, stablecoin supply. 8 tools.
+**Market & Crypto MCP Server** — 0 tools | Part of [ToolOracle](https://tooloracle.io)
 
-**Part of [ToolOracle](https://tooloracle.io) — Policy-enforced, tier-gated, usage-metered tool execution**
+![Tools](https://img.shields.io/badge/MCP_Tools-0-10B898?style=flat-square)
+![Status](https://img.shields.io/badge/Status-Live-00C853?style=flat-square)
+![Tier](https://img.shields.io/badge/Tier-Free-2196F3?style=flat-square)
 
-## Connect
+## Quick Connect
 
 ```bash
+# Claude Desktop / Cursor / Windsurf
 npx -y mcp-remote https://tooloracle.io/smart/mcp/
 ```
 
-## x402 Pay-per-call (autonomous agents)
-
+```json
+// claude_desktop_config.json
+{
+  "mcpServers": {
+    "smartmoneyoracle": {
+      "command": "npx",
+      "args": ["-y", "mcp-remote", "https://tooloracle.io/smart/mcp/"]
+    }
+  }
+}
 ```
-POST https://tooloracle.io/x402/smart/mcp/
-→ 402 with structured pricing → Send USDC on Base → Retry with X-PAYMENT header
-```
 
-## 8 Tools · 1 unit = $0.01
+## Tools (0)
 
-| Tool | Units | Price | Tier |
-|------|-------|-------|------|
-| `institutional` | 10 | $0.10 | Premium |
-| `alpha_signal` | 10 | $0.10 | Premium |
-| `flow_scan` | 5 | $0.05 | Deep |
-| `protocol_flows` | 5 | $0.05 | Deep |
-| `top_whales` | 3 | $0.03 | Standard |
-| `chain_flows` | 3 | $0.03 | Standard |
-| `stablecoin_flows` | 3 | $0.03 | Standard |
-| `health_check` | 0 | free | — |
+| Tool | Description |
+|------|-------------|
 
-## Alpha scoring
+## Pricing
 
-`alpha_signal` combines price momentum + volume surge + buy pressure + whale boost activity into a single score: COLD → WARMING → HOT → EXPLOSIVE.
+| Tier | Rate Limit | Price |
+|------|-----------|-------|
+| Free | 100 calls/day | €0 |
+| Pro | 10,000 calls/day | €29/month |
+| Enterprise | Unlimited | Custom |
 
-## Tier gating
+> Free tier includes all tools with rate limiting. Upgrade for higher limits and priority support.
 
-| Tier | Max/call | Blocked |
-|------|----------|---------|
-| Free ($0) | 3 units | institutional, alpha_signal |
-| Starter ($49/mo) | 8 units | — |
-| Pro+ / x402 | 15 units | — |
+## Part of ToolOracle
 
-## Data sources (all free)
+smartmoneyOracle is one of **42 specialized MCP servers** in the [ToolOracle](https://tooloracle.io) ecosystem — the largest collection of production-ready MCP tools for AI agents.
 
-DeFiLlama (TVL, protocols, stablecoins) · DexScreener (whale boosts, CTOs) · CoinGecko (trending)
+
+
+**Related Oracles:**
+- [FeedOracle](https://feedoracle.io) — Evidence-grade compliance data infrastructure
+- [ToolOracle](https://tooloracle.io) — 42 Oracles, 390+ MCP Tools
 
 ## Links
 
-- [ToolOracle](https://tooloracle.io) · [x402 Gateway](https://tooloracle.io/x402/)
-- [RankOracle](https://github.com/ToolOracle/rankoracle) · [ShopOracle](https://github.com/ToolOracle/shoporacle) · [MemeOracle](https://github.com/ToolOracle/memeoracle) · [YieldOracle](https://github.com/ToolOracle/yieldoracle)
+- 🌐 Live: `https://tooloracle.io/smart/mcp/`
+- 📚 Docs: [tooloracle.io/docs](https://tooloracle.io/docs)
+- 🏠 Platform: [tooloracle.io](https://tooloracle.io)
+
+---
+
+*Built by [FeedOracle](https://feedoracle.io) — Evidence by Design*
