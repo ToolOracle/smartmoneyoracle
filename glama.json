@@ -1,7 +1,14 @@
 {
   "name": "SmartMoneyOracle",
-  "description": "Whale & Institutional Flow MCP — 8 tools, TVL flows, alpha signals, stablecoins",
-  "url": "https://tooloracle.io/smart/mcp/",
-  "category": "Crypto",
-  "tags": ["whale-tracking", "institutional", "defi", "tvl", "alpha", "defillama", "x402", "mcp"]
+  "description": "Whale & Institutional Flow Intelligence \u2014 large transactions, smart money tracking across chains via MCP",
+  "repository": "https://github.com/ToolOracle/smartmoneyoracle",
+  "endpoint": "https://tooloracle.io/smartmoney/mcp/",
+  "tools": 8,
+  "license": "MIT",
+  "author": "FeedOracle Technologies",
+  "tags": [
+    "defi",
+    "mcp",
+    "ai-agent"
+  ]
 }
